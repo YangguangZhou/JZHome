@@ -1,2 +1,2 @@
 # JZHome
- Jerry Zhou的个人主页
+ Jerry Zhou的个主页
