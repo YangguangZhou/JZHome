@@ -29,7 +29,6 @@ html, body {
 }
 
 a {
-    /* color: rgb(0, 93, 146); */
     color: #279cff;
     opacity: 0.7;
     transition: opacity 0.2s;
