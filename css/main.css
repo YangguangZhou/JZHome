@@ -28,17 +28,17 @@ html, body {
     position: absolute;
 }
 
-a {
+div a {
     color: #279cff;
     opacity: 0.7;
     transition: opacity 0.2s;
 }
 
-a:hover {
+div a:hover {
     opacity: 1;
 }
 
-a:active {
+div a:active {
     opacity: 0.9;
 }
 
