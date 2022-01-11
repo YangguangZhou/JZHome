@@ -90,13 +90,13 @@ rt {
     min-width: 40%;
 }
 
-#text.lis .lis p a{
-    line-height: 1.4rem;
+#text.lis .lis p {
+    line-height: 1.6rem;
 }
 
-#text.lis .lis p div {
+#text.lis .lis p a {
     display: inline-block;
-    min-width: 40%;
+    min-width: 25%;
 }
 
 #text.list .timeline .year {
