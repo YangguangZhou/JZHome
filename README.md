@@ -1,6 +1,6 @@
 # JZHome Jerry Zhou的个人主页
 
-# [网址](https://jzhome.vercel.app/)
+# [网址](https://jerryz.com.cn/)
 
 版权所有 © 2020 - 2021 Jerry Zhou
 
