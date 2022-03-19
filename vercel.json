@@ -5,6 +5,7 @@
         { "src": "/account", "dest": "/account/index.html" },
         { "src": "/game", "dest": "/game/index.html" },
         { "src": "/", "dest": "/index/index.html" },
+        { "src": "/404", "dest": "/404/404.html" },
         {"src": "/(.*)","status": 404,"dest": "/404.html"}
     ]
 }
