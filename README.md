@@ -1,6 +1,6 @@
-# JZHome Jerry Zhou的个人主页
+# Jerry Zhou的个人主页
 
-# [网址](https://jerryz.com.cn/)
+# [jerryz.com.cn](https://jerryz.com.cn/)
 
 版权所有 © 2021 - 2022 YangguangZhou
 
