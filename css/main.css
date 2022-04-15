@@ -258,11 +258,12 @@ rt {
     opacity: .5;
 }
 
-.busuanzi {
-    margin-top: 17px;
+.bottom {
+    margin-top: 10px;
     display: inline-block;
     width: 100%;
     left: 50%;
+    bottom: 10%;
     position: relative;
     transform: translate(-50%, 0);
     color: #333;
