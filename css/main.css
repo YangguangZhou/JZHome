@@ -259,11 +259,11 @@ rt {
 }
 
 .bottom {
-    margin-top: 80%;
+    bottom: 2%;
     display: inline-block;
     width: 100%;
     left: 50%;
-    position: relative;
+    position: absolute;
     transform: translate(-50%, 0);
     color: #333;
 }
@@ -271,6 +271,6 @@ rt {
 .counter {
     text-align: center;
     margin-top: 10px;
-    color: #333;
+    color: #999;
     font-size: 14px;
 }
