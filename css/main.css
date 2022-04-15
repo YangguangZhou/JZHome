@@ -259,12 +259,18 @@ rt {
 }
 
 .bottom {
-    margin-top: 10px;
+    margin-top: 80%;
     display: inline-block;
     width: 100%;
     left: 50%;
-    bottom: 10%;
     position: relative;
     transform: translate(-50%, 0);
     color: #333;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
 }
