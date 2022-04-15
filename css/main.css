@@ -257,3 +257,13 @@ rt {
 .copyright a:hover {
     opacity: .5;
 }
+
+.busuanzi {
+    margin-top: 17px;
+    display: inline-block;
+    width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+    color: #333;
+}
