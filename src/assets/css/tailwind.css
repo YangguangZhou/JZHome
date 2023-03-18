@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .ind::before {
+        content: "　　";
+    }
+    
+    .no-drag {
+        -webkit-user-drag: none;
+    }
+
+    .min-w-52 {
+        min-width: 13rem;
+    }
+    
+    .min-w-40 {
+        min-width: 10rem;
+    }
+
+    .left-1\/8 {
+        left: 12.5%
+    }
+}

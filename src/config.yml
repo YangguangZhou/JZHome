@@ -1,0 +1,107 @@
+sponsorship:
+  - nick: f***n
+    money: 6.66
+    desc: 中考加油！
+
+project:
+  - name: Monet-All
+    url: https://monet.jerryz.com.cn/
+    desc: Android莫奈取色整合Magisk模块
+  - name: Luogu-User-Card
+    url: https://api.jerryz.com.cn/
+    desc: 洛谷用户信息卡片
+  - name: Cards
+    url: https://cards.jerryz.com.cn/
+    desc: 个人身份卡片 API 及生成器
+  - name: Links
+    url: https://links.jerryz.com.cn/
+    desc: 友链合集
+  - name: HTML-editor
+    url: https://html.jerryz.com.cn/
+    desc: HTML代码在线编辑器
+  - name: JZHome
+    url: https://jerryz.com.cn/
+    desc: Jerry Zhou的个人主页
+  - name: Game
+    url: /game
+    desc: 解压小游戏
+
+account:
+  - name: 微信
+    id: ilovegithub
+  - name: QQ
+    id: 2098412009
+  - name: GitHub
+    id: YangguangZhou
+  - name: 洛谷
+    id: 253620
+  - name: 酷安
+    id: JerryZhouYG
+  - name: Bilibili
+    id: Jerry_ZhouYG
+  - name: Twitter
+    id: JerryZhouYG
+  - name: Telegram
+    id: "@jerryzyg"
+
+friend:
+  - nick: Jerry Zhou
+    url: https:/jerryz.com.cn
+    desc: 永远相信美好的事情即将发生
+
+timeline:
+  - year: 2018
+    meta: [
+        { date: "上半年",               desc: "首次接触图形化编程" },
+        { date: "7 月",                 desc: "首次接触Javascript" },
+        { date: "7 月",                 desc: "写下了第一个“Hello, World!”" },
+        { date: "7 月",                 desc: "系统地学习Javascript" },
+        { date: "8 月",                 desc: "写下第一个自己创作的小程序：猜一猜" },
+    ]
+  - year: 2019
+    meta: [
+        { date: "上半年",               desc: "首次接触C语言" },
+        { date: "2 月",                 desc: "前往加拿大，开启了为期半年的留学" },
+        { date: "8 月 30 日",           desc: "首次接触C++" },
+        { date: "8 月 30 日",           desc: "注册了OpenJudge账号" },
+        { date: "8 月 30 日",           desc: "AC了超级玛丽" },
+        { date: "9 月 6 日",            desc: "注册了洛谷账号" },
+        { date: "9 月",                 desc: "开始系统地学习C++" },
+        { date: "10 月",                desc: "参加CSP-J，不出意外地爆零了（忘记怎么写freopen）" },
+        { date: "11 月",                desc: "首次接触Python" },
+    ]
+  - year: 2020
+    meta: [
+        { date: "6 月",                 desc: "通过摇号进入了梦寐以求的云大附中" },
+        { date: "7 月",                 desc: "开始学习部分简单的算法" },
+        { date: "10 月",                desc: "参加CSP-J，水了个100分，喜提省一" },
+        { date: "10 月",                desc: "参加CSP-S，爆零了" },
+        { date: "11 月",                desc: "洛谷绿名+绿标" },
+    ]
+  - year: 2021
+    meta: [
+        { date: "9 月",                 desc: "开始进一步地学习C++算法，取得了不小的进步" },
+        { date: "10 月",                desc: "参加CSP-J，101分" },
+        { date: "10 月",                desc: "参加CSP-S，15分" },
+        { date: "10 月",                desc: "参加NOIP，60分，差5分一等奖" },
+        { date: "11 月",                desc: "开始搭建Luogu-User-Card" },
+        { date: "11 月",                desc: "开始搭建个人博客和个人主页" },
+    ]
+  - year: 2022
+    meta: [
+        { date: "1 月",                 desc: "开始搭建Cards" },
+        { date: "3 月",                 desc: "参加联合省选，40分" },
+        { date: "4 月",                 desc: "进入省队，但最终放弃了参加NOI的机会" },
+        { date: "5 月",                 desc: "参加THUSC" },
+        { date: "6 月 18 日",           desc: "顺利通过小三科中考" },
+        { date: "9 月",                 desc: "制作了Monet-All，上了酷安头条" },
+        { date: "10 月",                desc: "参加CSP-S，25分，差5分就能拿奖" },
+    ]
+  - year: 2023
+    meta: [
+        { date: "1 月 1 日",            desc: "今年是中考年" },
+        { date: "2 月",                 desc: "开始搭建Links" },
+        { date: "2 月",                 desc: "大幅更新Monet-All" },
+        { date: "3 月",                 desc: "参加CCF春测，180分，又是差5分一等奖" },
+        { date: "3 月 18 日",           desc: "大幅度地更新个人主页" },
+    ]
