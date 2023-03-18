@@ -79,6 +79,13 @@
   </url>
 
   <url>
+    <loc>https://jerryz.com.cn/timeline</loc>
+    <lastmod>2023-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://jerryz.com.cn/game</loc>
     <lastmod>2023-02-19</lastmod>
     <changefreq>daily</changefreq>
