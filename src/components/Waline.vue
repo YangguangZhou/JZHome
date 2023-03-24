@@ -1,4 +1,6 @@
-<template></template>
+<template>
+    <div></div>
+</template>
 
 <script>
 import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
