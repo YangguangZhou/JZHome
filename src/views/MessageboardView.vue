@@ -14,7 +14,7 @@ import WalineComment from '@/components/WalineComment.vue';
 
 <script>
 import LinkTo from '@/components/LinkTo.vue';
-import WalineComment from '@/components/WalineCommentComment.vue';
+import WalineComment from '@/components/WalineComment.vue';
 
 export default {
     name: "MessageboardView",
