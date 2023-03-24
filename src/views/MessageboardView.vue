@@ -1,5 +1,5 @@
 
-import WalineComment from '@/components/WalineComment.vue';
+import loadWaline from '@/components/loadWaline.vue';
 
 <template>
     <span>
@@ -14,7 +14,7 @@ import WalineComment from '@/components/WalineComment.vue';
 
 <script>
 import LinkTo from '@/components/LinkTo.vue';
-import loadWaline from '@/components/WalineComment.vue';
+import loadWaline from '@/components/loadWaline.vue';
 // import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
 // init({

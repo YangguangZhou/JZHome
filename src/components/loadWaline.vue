@@ -6,22 +6,21 @@
   
 <script>
 export default {
-    name: "WalineComment",
     mounted() {
-        this.WalineComment();
+        this.loadWaline();
     },
     methods: {
-        WalineComment() {
+        loadWaline() {
             const script = document.createElement('script');
             script.type = 'module';
             script.src = 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
             script.async = true;
             script.onload = () => {
-                this.WalineComment();
+                this.initWaline();
             };
             document.body.appendChild(script);
         },
-        WalineComment() {
+        initWaline() {
             import('/@waline/client@v2/dist/waline.mjs').then(({ init }) => {
                 init({
                     el: '#waline',
@@ -32,3 +31,4 @@ export default {
     },
 };
 </script>
+  
