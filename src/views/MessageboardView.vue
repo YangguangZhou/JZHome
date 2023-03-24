@@ -1,12 +1,12 @@
 
-import Waline from '@/components/Waline.vue';
+import WalineComment from '@/components/WalineComment.vue';
 
 <template>
     <span>
         <div class="text-5xl tracking-wider mb-3 h-14">留言板</div>
         <div class="messageboard">
             <p class="font-bold">你好，陌生人。</p>
-            <Waline></Waline>
+            <WalineComment></WalineComment>
             <p>你可以点击<LinkTo url="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></LinkTo>返回主页。</p>
         </div>
     </span>
@@ -14,11 +14,11 @@ import Waline from '@/components/Waline.vue';
 
 <script>
 import LinkTo from '@/components/LinkTo.vue';
-import Waline from '@/components/Waline.vue';
+import WalineComment from '@/components/WalineCommentComment.vue';
 
 export default {
     name: "MessageboardView",
-    components: { LinkTo, Waline },
+    components: { LinkTo, WalineComment },
 };
 </script>
 

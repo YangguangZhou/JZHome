@@ -9,6 +9,6 @@ init({
     serverURL: 'https://waline.jerryz.com.cn',
 });
 export default {
-    name: "Waline",
+    name: "WalineComment",
 };
 </script>
