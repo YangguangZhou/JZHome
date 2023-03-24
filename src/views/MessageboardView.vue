@@ -1,28 +1,23 @@
+
+import Waline from '@/components/Waline.vue';
+
 <template>
     <span>
         <div class="text-5xl tracking-wider mb-3 h-14">留言板</div>
         <div class="messageboard">
             <p class="font-bold">你好，陌生人。</p>
-            
+            <Waline></Waline>
             <p>你可以点击<LinkTo url="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></LinkTo>返回主页。</p>
         </div>
     </span>
 </template>
 
-<script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-
-    init({
-      el: '#waline',
-      serverURL: 'https://your-domain.vercel.app',
-    });
-  </script>
-<script>
 import LinkTo from '@/components/LinkTo.vue';
+import Waline from '@/components/Waline.vue';
 
 export default {
     name: "MessageboardView",
-    components: { LinkTo },
+    components: { LinkTo, Waline },
 };
 </script>
 
