@@ -12,6 +12,7 @@ import Waline from '@/components/Waline.vue';
     </span>
 </template>
 
+<script>
 import LinkTo from '@/components/LinkTo.vue';
 import Waline from '@/components/Waline.vue';
 
