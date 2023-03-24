@@ -21,7 +21,7 @@ export default {
             document.body.appendChild(script);
         },
         initWaline() {
-            import('/@waline/client@v2/dist/waline.mjs').then(({ init }) => {
+            import('https://unpkg.com/@waline/client@v2/dist/waline.mjs').then(({ init }) => {
                 init({
                     el: '#waline',
                     serverURL: 'https://waline.jerryz.com.cn',
