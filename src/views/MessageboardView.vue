@@ -15,7 +15,12 @@ import WalineComment from '@/components/WalineComment.vue';
 <script>
 import LinkTo from '@/components/LinkTo.vue';
 import WalineComment from '@/components/WalineComment.vue';
+import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
+init({
+    el: '#waline',
+    serverURL: 'https://waline.jerryz.com.cn',
+});
 export default {
     name: "MessageboardView",
     components: { LinkTo, WalineComment },
