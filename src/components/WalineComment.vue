@@ -3,15 +3,12 @@
 </template>
 
 <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-    init({
-      el: '#waline',
-      serverURL: 'https://waline.jerryz.com.cn',
-    });
-</script>
-
-<script>
+init({
+    el: '#waline',
+    serverURL: 'https://waline.jerryz.com.cn',
+});
 export default {
     name: "WalineComment",
 };
