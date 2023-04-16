@@ -25,7 +25,7 @@ import { useRoute } from 'vue-router';
 
 const serverURL = 'https://waline.vercel.app';
 const path = computed(() => useRoute().path);
-const dark = auto;
+const dark = 'auto';
 </script>
 
 <style>
