@@ -2,7 +2,6 @@
     <span>
         <div class="text-4xl sm:text-5xl tracking-wider mb-3 h-14">留言板</div>
         <div class="messageboard">
-            
             <p>你可以在这里留言</p>
             <Waline :serverURL="serverURL" :path="path" />
             <p>你可以点击<LinkTo url="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></LinkTo>返回主页。</p>
@@ -17,12 +16,14 @@ export default {
     name: "MessageboardView",
     components: { LinkTo },
 };
+</script>
 
+<script setup>
 import { Waline } from '@waline/client/component';
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-const serverURL = 'https://waline.jerryz.com.cn';
+const serverURL = 'https://waline.vercel.app';
 const path = computed(() => useRoute().path);
 </script>
 
