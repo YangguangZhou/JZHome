@@ -23,7 +23,7 @@ import { Waline } from '@waline/client/component';
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-const serverURL = 'https://waline.vercel.app';
+const serverURL = 'https://waline.jerryz.com.cn';
 const path = computed(() => useRoute().path);
 const dark = 'auto';
 </script>
