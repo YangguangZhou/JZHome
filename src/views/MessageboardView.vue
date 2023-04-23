@@ -4,7 +4,7 @@
         <div class="messageboard">
             <p>你可以在这里留言</p>
             <p>你可以点击<LinkTo url="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></LinkTo>返回主页。</p>
-            <Waline :serverURL="serverURL" :path="path" :dark="dark"/>
+            <Waline :serverURL="serverURL" :path="path" :dark="dark" :lang="lang"/>
         </div>
     </span>
 </template>
@@ -26,6 +26,7 @@ import { useRoute } from 'vue-router';
 const serverURL = 'https://waline.jerryz.com.cn';
 const path = computed(() => useRoute().path);
 const dark = 'auto';
+const lang = 'zh';
 </script>
 
 <style>
