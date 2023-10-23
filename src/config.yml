@@ -3,16 +3,21 @@ sponsorship:
     money: 6.66
     desc: 中考加油！
   - nick: 仙童半导体
-    money: 20
+    money: 20.00
     desc: 小弟加油
   - nick: "**珩"
-    money: 2
+    money: 2.00
+  - nick: "**B"
+    money: 2.00
+    desc: 感谢
   - nick: "**燚"
-    money: 5
+    money: 5.00
   - nick: "**帅"
-    money: 3
+    money: 3.00
   - nick: "**勇"
-    money: 3
+    money: 3.00
+  - nick: "**航"
+    money: 1.00
 
 project:
   - name: Monet-All
