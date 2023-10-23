@@ -118,6 +118,10 @@ timeline:
         { date: "1 月 1 日",            desc: "今年是中考年" },
         { date: "2 月",                 desc: "开始搭建Links" },
         { date: "2 月",                 desc: "大幅更新Monet-All" },
-        { date: "3 月",                 desc: "参加CCF春测，180分，又是差5分一等奖" },
+        { date: "3 月",                 desc: "参加CCF春测，180分，刚好到一等奖线" },
         { date: "3 月 18 日",           desc: "大幅度地更新个人主页" },
+        { date: "3 月 - 6 月",           desc: "全力备战中考" },
+        { date: "6 月 16 日 - 6 月 18 日", desc: "中考" },
+        { date: "7 月",                 desc: "中考取得了不错的成绩" },
+        { date: "7 月",                 desc: "考上了心仪的高中：YNSDFZ" },
     ]
