@@ -4,5 +4,8 @@
             "source": "/:path*",
             "destination": "/"
         }
+    ],
+    "redirects": [
+        { "source": "/project", "destination": "https://tools.jerryz.com.cn/" }
     ]
 }
