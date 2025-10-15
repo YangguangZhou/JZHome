@@ -1,16 +1,41 @@
 Math.lerp = (a, b, n) => (1 - n) * a + n * b;
 
+const supportsFinePointer = () => {
+    if (typeof window === "undefined") {
+        return false;
+    }
+
+    if (window.matchMedia) {
+        const hasFinePointer = window.matchMedia("(pointer: fine)").matches;
+        const hasHover = window.matchMedia("(hover: hover)").matches;
+        return hasFinePointer && hasHover;
+    }
+
+    return !("ontouchstart" in window);
+};
+
 class Cursor {
     constructor() {
+        this.isEnabled = supportsFinePointer();
         this.pos = { curr: null, prev: null };
         this.els = [];
+        this.cursor = null;
+
+        if (!this.isEnabled) {
+            return;
+        }
+
         this.create();
         this.init();
         this.render();
     }
 
     refresh() {
-        this.cursor.classList.remove("hover")
+        if (!this.isEnabled || !this.cursor) {
+            return;
+        }
+
+        this.cursor.classList.remove("hover");
         this.els = document.querySelectorAll(".cursor");
         let that = this;
 
@@ -27,11 +52,18 @@ class Cursor {
     }
 
     move(left, top) {
+        if (!this.isEnabled || !this.cursor) {
+            return;
+        }
         this.cursor.style["left"] = `${left}px`;
         this.cursor.style["top"] = `${top}px`;
     }
 
     create() {
+        if (!this.isEnabled) {
+            return;
+        }
+
         if (!this.cursor) {
             this.cursor = document.createElement("div");
             this.cursor.id = "cursor";
@@ -41,6 +73,10 @@ class Cursor {
     }
 
     init() {
+        if (!this.isEnabled) {
+            return;
+        }
+
         document.onmousemove  = (e) => { this.pos.curr == null && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = { x: e.clientX - 8, y: e.clientY - 8 }; this.cursor.classList.remove("hidden"); };
         document.onmouseenter = ( ) => this.cursor.classList.remove("hidden");
         document.onmouseleave = ( ) => this.cursor.classList.add("hidden");
@@ -49,6 +85,10 @@ class Cursor {
     }
 
     render() {
+        if (!this.isEnabled) {
+            return;
+        }
+
         if (this.pos.prev) {
             this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);
             this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);

@@ -22,11 +22,19 @@
     transform: scale(0.5);
 
 *
-    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto !important;
+    cursor: auto !important;
+
+@media (hover: none), (pointer: coarse)
+    #cursor
+        display: none !important;
 
 @media screen and (max-width: 640px)
     #cursor
         display: none !important;
+
+@media (hover: hover) and (pointer: fine)
+    *
+        cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto !important;
 
 @media (prefers-color-scheme: dark)
     #cursor
@@ -35,5 +43,6 @@
         background: rgba(255, 255, 255, 0.1);
     #cursor.active
         background: rgba(255, 255, 255, 0.5);
+@media (hover: hover) and (pointer: fine) and (prefers-color-scheme: dark)
     *
         cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' fill='white' opacity='.8'/></svg>") 4 4, auto !important;
