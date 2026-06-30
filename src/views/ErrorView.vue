@@ -20,6 +20,10 @@ export default {
 
 <style>
 .error p {
-    @apply ind text-base sm:text-lg leading-9 mb-2
+    @apply text-base sm:text-lg leading-9 mb-2
+}
+
+.error p::before {
+    content: "\3000\3000";
 }
 </style>

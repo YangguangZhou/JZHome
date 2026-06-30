@@ -1,13 +1,16 @@
 <template>
     <main class="home-view">
-        <h1 class="text-5xl tracking-wider mb-3 h-14">欢迎来到 Jerry Zhou 的个人主页</h1>
+        <h1 class="text-4xl sm:text-5xl tracking-wider mb-5 sm:h-14">欢迎</h1>
         <section class="home">
-            <p class="font-bold">我是 Jerry Zhou，</p>
-            <p>自2020年起，<ruby><rb>"Jerry Zhou"</rb><rt>Used Since 2020</rt></ruby>便是我在网络世界的身份标识。想了解更多关于我？请点击<LinkTo url="https://blog.jerryz.com.cn/article/about/"><ruby><rb>这里</rb><rt>/about</rt></ruby></LinkTo>。</p>
-            <p>我现在是一名高二学生，就读于<LinkTo url="https://ynsdfz.net/"><ruby><rb>云南师大附中</rb><rt>YNSDFZ</rt></ruby></LinkTo>。除此之外，我还是一名<ruby><rb>信息学竞赛选手</rb><rt>OIer</rt></ruby>，同时对生物学抱有浓厚的兴趣。欢迎访问<LinkTo url="/account"><ruby><rb>我的社交账号</rb><rt>/account</rt></ruby></LinkTo>，与我交流互动。</p>
-            <p>我经常在<LinkTo url="https://blog.jerryz.com.cn/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></LinkTo>分享我感兴趣的话题。同时，我也乐于开发<LinkTo url="https://tools.jerryz.com.cn/"><ruby><rb>网站和各种有趣的项目</rb><rt>Tools & Projects</rt></ruby></LinkTo>，这些都可以在我的<LinkTo url="https://github.com/YangguangZhou"><ruby><rb>GitHub</rb><rt>YangguangZhou</rt></ruby></LinkTo>上找到。每一行代码都记录着我成长的足迹，欢迎探索我的<LinkTo url="/timeline"><ruby><rb>成长历程</rb><rt>/timeline</rt></ruby></LinkTo>。</p>
-            <p>维护网站需要花费不少心血和资源，如果你喜欢我的作品，不妨考虑<LinkTo url="/sponsor"><ruby><rb>支持</rb><rt>/sponsor</rt></ruby></LinkTo>我。有什么想对我说的？请在<LinkTo url="/messageboard"><ruby><rb>留言板</rb><rt>/messageboard</rt></ruby></LinkTo>分享你的想法。</p>
-            <img src="https://card.jerryz.com.cn/white">
+            <p class="font-bold">你好，这里是 <ruby><rb>Jerry Zhou</rb><rt>Used Since 2020</rt></ruby> 的个人主页。</p>
+            <p>我会在这里整理做过的项目、写下的文章，以及一些仍在尝试的想法。它不记录现实生活的履历，更像是一份持续更新的网络档案。</p>
+            <p>很多作品都从一个很小的问题开始：有没有更方便的做法，能不能少一点重复，或者怎样让一次学习更有效。它们后来在反复使用和修改中慢慢有了现在的样子。你可以从<LinkTo url="/project"><ruby><rb>项目</rb><rt>/project</rt></ruby></LinkTo>页开始了解。</p>
+            <p>在<LinkTo url="https://blog.jerryz.com.cn/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></LinkTo>里，我会记录技术实践，也会写一些日常观察。文章不一定提供标准答案，但我希望它们至少把问题讲清楚，也保留当时真实的思考。</p>
+            <p>如果你用过这些作品，欢迎到<LinkTo url="/messageboard"><ruby><rb>留言板</rb><rt>/messageboard</rt></ruby></LinkTo>分享建议；如果它们确实帮到了你，也可以选择<LinkTo url="/sponsor"><ruby><rb>支持后续维护</rb><rt>/sponsor</rt></ruby></LinkTo>。</p>
+            <picture class="identity-card">
+                <source media="(prefers-color-scheme: dark)" srcset="https://card.jerryz.com.cn/dark_transparent">
+                <img src="https://card.jerryz.com.cn/" alt="Jerry Zhou 的网络身份卡片">
+            </picture>
         </section>
     </main>
 </template>
@@ -23,6 +26,19 @@ export default {
 
 <style>
 .home p {
-    @apply ind text-base sm:text-lg leading-9 mb-2
+    @apply text-base sm:text-lg leading-9 mb-2
+}
+
+.home p::before {
+    content: "\3000\3000";
+}
+
+.identity-card {
+    @apply mt-7 block w-full;
+}
+
+.identity-card img {
+    @apply block h-auto w-full select-none;
+    -webkit-user-drag: none;
 }
 </style>

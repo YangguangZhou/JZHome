@@ -2,9 +2,11 @@
   <span>
     <div class="text-4xl sm:text-5xl tracking-wider mb-3 h-14">留言板</div>
     <div class="messageboard">
-      <p class="content">你可以在这里留言</p>
+      <p class="content font-bold">欢迎留下你的想法。</p>
+      <p class="content">如果你用过某个项目，有建议、遇到的问题，或者只是想聊聊文章中的某个话题，都可以写在这里。我会在有空时阅读并回复。</p>
+      <p class="content">留言内容会公开显示。为了保护隐私，请不要留下手机号、私人账号或其他敏感信息。</p>
       <p class="content">
-        你可以点击<LinkTo url="/"
+        点击<LinkTo url="/"
           ><ruby><rb>这里</rb><rt>/index</rt></ruby></LinkTo
         >返回主页。
       </p>
@@ -51,6 +53,10 @@ const emoji = [
 
 <style>
 .content {
-  @apply ind text-base sm:text-lg leading-9 mb-2;
+  @apply text-base sm:text-lg leading-9 mb-2;
+}
+
+.content::before {
+  content: "\3000\3000";
 }
 </style>

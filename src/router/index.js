@@ -5,8 +5,6 @@ import SponsorView from "@/views/SponsorView.vue";
 import SponsorshipView from "@/views/SponsorshipView.vue";
 import MessageboardView from "@/views/MessageboardView.vue";
 import ProjectView from "@/views/ProjectView.vue";
-import AccountView from "@/views/AccountView.vue";
-import TimelineView from "@/views/TimelineView.vue";
 import ErrorView from "@/views/ErrorView.vue";
 
 const routes = [
@@ -15,8 +13,9 @@ const routes = [
         name: "HomeView",
         component: HomeView,
         meta: {
-            title: "Jerry Zhou 的个人主页",
-            description: "Jerry Zhou 的个人主页，记录学习、编程项目与成长故事，欢迎探索更多关于我的内容。"
+            title: "Jerry Zhou｜独立项目与技术文章",
+            description: "Jerry Zhou 的个人主页，整理独立开发项目、开源工具与技术文章，收录 Poems、Caffeine Tracker 等作品。",
+            robots: "index, follow, max-image-preview:large"
         }
     },
     {
@@ -25,7 +24,8 @@ const routes = [
         component: SponsorView,
         meta: {
             title: "赞助 | Jerry Zhou",
-            description: "支持 Jerry Zhou 的创作与项目，感谢每一位愿意伸出援手的朋友。"
+            description: "支持独立项目的后续维护与更新。",
+            robots: "index, follow, max-image-preview:large"
         }
     },
     {
@@ -34,7 +34,8 @@ const routes = [
         component: SponsorshipView,
         meta: {
             title: "赞助明细 | Jerry Zhou",
-            description: "查看支持 Jerry Zhou 的赞助明细和留言，见证每一次善意的陪伴。"
+            description: "查看独立项目收到的支持记录。",
+            robots: "index, follow, max-image-preview:large"
         }
     },
     {
@@ -43,7 +44,8 @@ const routes = [
         component: MessageboardView,
         meta: {
             title: "留言板 | Jerry Zhou",
-            description: "在留言板留下你的想法，与 Jerry Zhou 交流互动。"
+            description: "留下项目建议、使用反馈或关于文章的想法。",
+            robots: "index, follow, max-image-preview:large"
         }
     },
     {
@@ -52,25 +54,8 @@ const routes = [
         component: ProjectView,
         meta: {
             title: "项目 | Jerry Zhou",
-            description: "浏览 Jerry Zhou 打造的网站与工具项目，获取灵感与实用资源。"
-        }
-    },
-    {
-        path: "/account",
-        name: "AccountView",
-        component: AccountView,
-        meta: {
-            title: "社交账号 | Jerry Zhou",
-            description: "找到 Jerry Zhou 的社交账号，与他在不同平台保持联系。"
-        }
-    },
-    {
-        path: "/timeline",
-        name: "TimelineView",
-        component: TimelineView,
-        meta: {
-            title: "成长历程 | Jerry Zhou",
-            description: "了解 Jerry Zhou 的时间线，记录成长与重要节点。"
+            description: "浏览 Poems、Caffeine Tracker、TOEFL Speaking Mock System 等独立开发项目与开源工具。",
+            robots: "index, follow, max-image-preview:large"
         }
     },
     {
@@ -79,7 +64,8 @@ const routes = [
         component: ErrorView,
         meta: {
             title: "页面未找到 | Jerry Zhou",
-            description: "抱歉，您访问的页面不存在。请返回主页或浏览其他内容。"
+            description: "抱歉，您访问的页面不存在。请返回主页或浏览其他内容。",
+            robots: "noindex, follow"
         }
     },
 ];
@@ -97,8 +83,9 @@ const router = createRouter({
 });
 
 const DEFAULT_META = {
-    title: "Jerry Zhou 的个人主页",
-    description: "Jerry Zhou 的个人主页，记录学习、编程项目与成长故事，欢迎探索更多关于我的内容。"
+    title: "Jerry Zhou｜独立项目与技术文章",
+    description: "Jerry Zhou 的个人主页，整理独立开发项目、开源工具与技术文章。",
+    robots: "index, follow, max-image-preview:large"
 };
 
 router.afterEach((to) => {
@@ -108,6 +95,7 @@ router.afterEach((to) => {
 
     const title = to.meta?.title || DEFAULT_META.title;
     const description = to.meta?.description || DEFAULT_META.description;
+    const robots = to.meta?.robots || DEFAULT_META.robots;
     document.title = title;
 
     const updateTag = (selector, attribute, value) => {
@@ -118,6 +106,8 @@ router.afterEach((to) => {
     };
 
     updateTag('meta[name="description"]', "content", description);
+    updateTag('meta[name="robots"]', "content", robots);
+    updateTag('meta[name="googlebot"]', "content", robots);
     updateTag('meta[property="og:title"]', "content", title);
     updateTag('meta[property="og:description"]', "content", description);
     updateTag('meta[name="twitter:title"]', "content", title);
